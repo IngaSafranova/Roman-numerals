@@ -24,22 +24,31 @@ const romanNumerals = {
   I: 1,
 };
 
-let output = '';
+let output = [];
 
-const InputValue = (e)=> {
-    const InputValue =input.value ;
-console.log(InputValue)
-}
-button.addEventListener('click', InputValue)
+const RomanToNumber = (e) => {
+  let inputValue = input.value;
+  output = [];
+  result.innerText = "";
+  if (inputValue === "") {
+    result.innerHTML = "Please enter a valid number";
+  } else if (inputValue === "-1") {
+    result.innerText = "Please enter a number greater than or equal to 1";
+  } else if (inputValue >= parseInt("4000")) {
+    result.innerText = "Please enter a number less than or equal to 3999";
+  } else {
+    for (const key in romanNumerals) {
+      const numberValue = romanNumerals[key];
 
-// const RomanToNumber = ()=>{
-//     for (const key in romanNumerals) {
-    
-//         const numberValue = romanNumerals[key];
-                
-//             console.log(key, numberValue)
-//             while (numberValue >= )
-//         }
-        
-// }
+      while (inputValue >= numberValue) {
+        inputValue -= numberValue;
+        output.push(key);
+        console.log(inputValue, key);
+      }
+    }
+    result.innerText = output.join("");
+    input.value = "";
+  }
+};
 
+button.addEventListener("click", RomanToNumber);

@@ -21,7 +21,7 @@ h1 {
 .input-container {
   padding: 1rem;
   display: flex;
- 
+
   justify-content: center;
 }
 input {
@@ -36,9 +36,13 @@ button {
   border-radius: 5px;
 }
 .display {
-  height: 50px;
+  min-height: fit-content;
+  height:70px;
   width: 250px;
-  padding-inline: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
   border: 1px solid orange;
   justify-items: center;
   align-self: center;
