@@ -1,1 +1,1 @@
-Roman numerals converter app is created as one of the assinements to achieve the FreeCodeCamp certification for Javascript algoritms and data structures.
+The Roman numerals converter app is created as one of the assignments to achieve the FreeCodeCamp certification for Javascript algorithms and data structures.
